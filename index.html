@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;} */
+        body {
+
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: inherit;
+            justify-content: center;
+            align-items: left;
+            margin: auto;
+        }
+        form div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            text-align: left;
+            width: 313px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type=submit] {
+            color: cornsilk;
+            background-color: rgb(3, 135, 218);
+            width: 143px;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 4px;
+            font-size: 1rem;
+        }
+
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm">
+        <div>
+        <label for="employeeID">8-Digit Employee ID</label>
+        <input type="text" id="id" name="employeeID" required maxlength="8">
+        </div>
+        <div>
+        <label for="fname">Full Name</label>
+        <input type="text" id="name" name="fname" required>
+        </div>
+        <div>
+        <label for="extension">4-Digit Extension</label>
+        <input type="text" id="ext" name="extension" required maxlength="4">
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+        <label for="department">Department</label>
+        <select id="department" name="department">
+            <option value="Administrative">Administrative</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Executive">Executive</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Quality Assurance">Quality Assurance</option>
+            <option value="Sales">Sales</option>
+          </select>
+          </div>
+        <input type="submit" value="Add Employee">
+    </form>
+</body>
+</html>
